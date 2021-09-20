@@ -1,7 +1,25 @@
-# examples
+# hugo-mods: examples
 
-Example assets for hugo-mods example sites.
+Placeholders and example assets for hugo-mods example sites.
 
-## License
+## Usage
 
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+### Texts
+
+In a shortcode, generate 10 lorem ipsum paragraphs:
+
+```
+{{< lorem 10 >}}
+```
+
+### Images
+
+Load image showing the alps as resource, e.g.:
+
+```
+<img src="{{ (resources.Get "images/alps.jpg").Permalink }}">
+```
+
+<img alt="Creative Commons License" align="right" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"/>
+
+All files in the [assets/images](./assets/images) directory are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
